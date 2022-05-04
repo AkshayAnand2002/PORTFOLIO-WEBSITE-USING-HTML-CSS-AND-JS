@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Radio+Canada:wght@300&family=Water+Brush&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    /*written so that even if screen screen size <= that declared in media query then sidebar does not cover entire screen but appears as open and closing panees with position fixed or absolute. */
+    background-color: yellow;
+    /*width: 250px;*/
+    font-family: 'Open Sans', sans-serif;
+    height: 110vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 56px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 23px 0;
+}
+
+.main {
+    background-color: goldenrod;
+    width: 100vw;
+    height: 200vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    background-color: yellowgreen;
+    height: 55vh;
+    width: 50vw;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.picture img {
+    width: 300px;
+    height: 55vh;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.hello {
+    font-size: 80px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Water Brush', cursive;*/
+}
+
+.about {
+    font-size: 20px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 7px;
+    color: black;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: orangered;
+    background-color: burlywood;
+}
+
+.moreabout {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 12px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: brown;
+}
+
+.contactform {
+    padding-top: 100px;
+    padding: 0 250px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 88px;
+}
+
+.contactform h1 {
+    font-family: 'Water Brush', cursive;
+    /*text-align: center;*/
+    padding: 22px 0;
+}
+
+.contactform form div {
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 20vw;
+    border-radius: 5px;
+    margin: 2px 0;
+    padding: 2px;
+}
+
+#emailHelp {
+    font-size: 17px;
+    color: brown;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 20px;
+    margin: 3px 0;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 19px;
+    margin: 12px 0;
+}
+
+.blogitem {
+    margin: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blogitem h2 {}
+
+h1 {
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    margin: 23px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 12px;
+}
+
+.skill {
+    width: 133px;
+    height: 13px;
+    /*background-color: red;
+    border: 2px solid black;*/
+}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillitem {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+
+/*
+.hundred {
+    width: 133px;
+    background-color: blueviolet;
+}
+
+.fifty {
+    width: 66px;
+    /*background-color: aqua;*/
+
+
+}
+.twentyfive {
+    width: 33px;
+    /*background-color: yellow;*/
+}
+*/ .achieved {
+    font-family: 'Open Sans', sans-serif;
+    margin: 12px;
+    height: 55vh;
+    width: 50vw;
+}
+
+/*.a2 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 12px;
+}*/
+@media(max-width: 166px) {
+    /* as soon as screen size is lesser than or equal to 166px then whole screen background color is red.*/
+    
+    * {
+        background-color: red;
+    }
+    
+    .picture {
+        display: none;
+        /* picture will not be displayed when screen size <= 166px.*/
+    }
+    
+    .sidebar {
+        {
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+    }
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+}
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross {
+    margin-left: 170px;
+    margin-top: 10px;
+    ;
+}
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.blogcontainer {
+    margin: 0 88px;
+}
+.intro {
+    margin: 0 88px;
+}
